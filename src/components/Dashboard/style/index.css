@@ -1,0 +1,114 @@
+.add.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #646cff30;
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.add_form {
+  color: #242424;
+  background-color: #ffffff;
+  backdrop-filter: blur(5px);
+  padding: 10px;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  width: 90%;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.input_error_container {
+  display: flex;
+  width: 80%;
+  margin-top: 5px;
+}
+
+p.input_error_text {
+  color: red;
+  font-size: 9px;
+  padding: 0;
+  margin: 0;
+  line-height: 12px;
+  font-weight: 500;
+}
+
+input.add_input {
+  display: block;
+  color: #213547;
+  background-color: transparent;
+  border-radius: 10px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 80%;
+  border: 1px solid #24242450;
+  font-size: 0.9rem;
+}
+
+input.add_input:focus {
+  outline-color: #0084ff;
+  border: none;
+}
+
+input.add_input[type='datetime-local'] {
+  background-color: transparent;
+  padding-right: 2.5px;
+}
+
+input.add_input[type='datetime-local']::-webkit-calendar-picker-indicator {
+  background-color: #242424;
+  filter: invert(01);
+  border-radius: 7px;
+  padding: 10px;
+}
+
+.add_button {
+  background-color: #646cff;
+  color: #fff;
+  border: none;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  margin-top: 15px;
+  text-align: center;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.cancel_add_button {
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.7rem;
+  cursor: pointer;
+  color: #646cff;
+  /* border: 1px solid #646cff; */
+  margin-top: 5px;
+}
+
+@media screen and (min-width: 767px) {
+  .add_form {
+    width: 50%;
+  }
+  input.add_input,
+  .input_error_container {
+    width: 50%;
+  }
+}

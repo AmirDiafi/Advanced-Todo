@@ -1,0 +1,22 @@
+nav.container {
+  background-color: rgb(45, 45, 45);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 0px 1px 4px #0003;
+}
+
+.nav_title {
+  color: #fff;
+}
+
+button {
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  border-radius: 10px;
+  border: none;
+}

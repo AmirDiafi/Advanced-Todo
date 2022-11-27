@@ -1,6 +1,5 @@
-import { SetStateAction } from 'react'
 import { InputEnum } from '../../Dashboard/constants'
-import { ToDoTypes } from '../../Dashboard/types'
+import { ItemTitleProps } from '../types'
 
 export const ItemTitle = ({
   editingNameId,
@@ -9,14 +8,7 @@ export const ItemTitle = ({
   editTodoName,
   setTodo,
   setEditingNameId,
-}: {
-  editingNameId: string | undefined
-  item: ToDoTypes
-  todo: ToDoTypes
-  editTodoName: (value: string, todoId: string, stringName: InputEnum) => void
-  setTodo: React.Dispatch<SetStateAction<ToDoTypes>>
-  setEditingNameId: React.Dispatch<SetStateAction<string | undefined>>
-}) => {
+}: ItemTitleProps) => {
   return (
     <div
       className='todo_item_name_container'

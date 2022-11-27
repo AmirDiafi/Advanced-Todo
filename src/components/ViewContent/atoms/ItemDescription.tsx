@@ -1,6 +1,5 @@
-import { SetStateAction } from 'react'
 import { InputEnum } from '../../Dashboard/constants'
-import { ToDoTypes } from '../../Dashboard/types'
+import { ItemDescriptionProps } from '../types'
 
 export const ItemDescription = ({
   editingDescId,
@@ -9,14 +8,7 @@ export const ItemDescription = ({
   editTodoName,
   setTodo,
   setEditingDescId,
-}: {
-  editingDescId: string | undefined
-  item: ToDoTypes
-  todo: ToDoTypes
-  editTodoName: (value: string, todoId: string, stringName: InputEnum) => void
-  setTodo: React.Dispatch<SetStateAction<ToDoTypes>>
-  setEditingDescId: React.Dispatch<SetStateAction<string | undefined>>
-}) => {
+}: ItemDescriptionProps) => {
   return (
     <div
       className='todo_item_name_container'
@@ -63,7 +55,9 @@ export const ItemDescription = ({
             setEditingDescId(item.id)
           }}
         >
-          {item.description.value?.toString()}
+          {(item.description.value?.toString().length ?? 0) > 45
+            ? item.description.value?.toString().slice(0, 45) + '...'
+            : item.description.value?.toString()}
         </p>
       )}
     </div>

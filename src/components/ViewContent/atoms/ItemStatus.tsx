@@ -1,12 +1,6 @@
-import { ToDoTypes } from '../../Dashboard/types'
+import { ItemStatusProps } from '../types'
 
-export const ItemStatus = ({
-  setTodoStatus,
-  item,
-}: {
-  setTodoStatus: (isFinished: boolean, todoId: string) => void
-  item: ToDoTypes
-}) => {
+export const ItemStatus = ({ setTodoStatus, item }: ItemStatusProps) => {
   return (
     <div className='todo_item_status'>
       <button

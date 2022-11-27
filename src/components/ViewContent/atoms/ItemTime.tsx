@@ -1,7 +1,7 @@
 import moment from 'moment'
-import { ToDoTypes } from '../../Dashboard/types'
+import { ItemTimeProps } from '../types'
 
-export const ItemTime = ({ item }: { item: ToDoTypes }) => {
+export const ItemTime = ({ item }: ItemTimeProps) => {
   return (
     <div>
       <p className='todo_item_time'>

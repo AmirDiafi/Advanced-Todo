@@ -3,8 +3,9 @@ import { useTodoStore } from '../../../store/todos'
 import { ToDoTypes } from '../../Dashboard/types'
 import { ItemDescription } from '../atoms/ItemDescription'
 import { ItemStatus } from '../atoms/ItemStatus'
-import { ItemTime } from '../atoms/ItemTime'
 import { ItemTitle } from '../atoms/ItemTitle'
+import { TodoItemProps } from '../types'
+import { DeleteItemButton } from './DeleteItemButton'
 
 export const TodoItem = ({
   item,
@@ -13,14 +14,7 @@ export const TodoItem = ({
   setEditingNameId,
   editingDescId,
   setEditingDescId,
-}: {
-  item: ToDoTypes
-  editingNameId: string | undefined
-  editingDescId: string | undefined
-  setEditingNameId: React.Dispatch<React.SetStateAction<string | undefined>>
-  setEditingDescId: React.Dispatch<React.SetStateAction<string | undefined>>
-  resetIsEditing: () => void
-}) => {
+}: TodoItemProps) => {
   const { setTodoStatus, editTodoName } = useTodoStore()
   const [todo, setTodo] = useState(item)
 
@@ -29,7 +23,7 @@ export const TodoItem = ({
   }, [item, setTodo])
 
   return (
-    <div onClick={resetIsEditing} key={item.id} className='todo_content_item'>
+    <div onClick={resetIsEditing} className='todo_content_item'>
       <div className='row'>
         <ItemStatus setTodoStatus={setTodoStatus} item={item} />
         <ItemTitle
@@ -49,7 +43,7 @@ export const TodoItem = ({
           setEditingDescId={setEditingDescId}
         />
       </div>
-      <ItemTime item={item} />
+      <DeleteItemButton item={item} />
     </div>
   )
 }

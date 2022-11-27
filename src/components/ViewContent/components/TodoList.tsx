@@ -15,6 +15,7 @@ export const TodoList = ({ data }: { data: ToDoTypes[] }) => {
       {data.map((item) => {
         return (
           <TodoItem
+            key={item.id}
             item={item}
             resetIsEditing={resetIsEditing}
             editingNameId={editingNameId}

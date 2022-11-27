@@ -18,9 +18,12 @@ Advanced Todo with CRUD operations using Zustand
 
 
 #### Edit item:
-
-
 <img width="600" alt="Screen Shot 2022-11-27 at 11 49 05 AM" src="https://user-images.githubusercontent.com/59441376/204131297-b3f89ff5-1f18-42ab-8d33-ff8f781b31b7.png">
+
+#### Delete item
+<img width="600" alt="Screen Shot 2022-11-27 at 12 11 33 PM" src="https://user-images.githubusercontent.com/59441376/204132125-62d3264c-3fc8-40e6-9106-7e2a92d30603.png">
+
+
 
 
  

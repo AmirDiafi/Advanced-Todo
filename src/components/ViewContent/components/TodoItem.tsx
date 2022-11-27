@@ -5,7 +5,7 @@ import { ItemDescription } from '../atoms/ItemDescription'
 import { ItemStatus } from '../atoms/ItemStatus'
 import { ItemTitle } from '../atoms/ItemTitle'
 import { TodoItemProps } from '../types'
-import { DeleteItemButton } from './DeleteItemButton'
+import { DeleteItemButton } from '../atoms/DeleteItemButton'
 
 export const TodoItem = ({
   item,

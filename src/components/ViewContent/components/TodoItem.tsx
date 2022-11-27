@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { useTodoStore } from '../../../store/todos'
-import { ToDoTypes } from '../../Dashboard/types'
 import { ItemDescription } from '../atoms/ItemDescription'
 import { ItemStatus } from '../atoms/ItemStatus'
 import { ItemTitle } from '../atoms/ItemTitle'

@@ -25,6 +25,7 @@ export const AddModalView = ({ isOpen, setModalOpen }: AddModalProps) => {
                   type={item.type}
                   value={item.value}
                   onChange={item.onChange}
+                  maxLength={item.maxLength}
                   name={item.name}
                   placeholder={item.placeholder}
                   min={item.min}

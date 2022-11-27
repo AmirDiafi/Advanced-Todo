@@ -10,7 +10,12 @@ export const NavbarView = ({ setModalOpen }: NavbarProps) => {
         <img src={reactLogo} />
       </div>
       <div>
-        <button onClick={() => setModalOpen((v) => !v)}>+</button>
+        <button
+          className='navbar_add_item'
+          onClick={() => setModalOpen((v) => !v)}
+        >
+          +
+        </button>
       </div>
     </nav>
   )

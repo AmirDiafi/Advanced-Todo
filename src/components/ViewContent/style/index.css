@@ -48,6 +48,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-right: 5px;
 }
 
 .todo_item_name_container p {
@@ -57,11 +58,18 @@
 p.todo_item_name {
   font-weight: 600;
   text-transform: capitalize;
+  font-size: 0.8rem;
 }
 
 p.todo_item_desc {
   font-weight: 400;
   font-size: 14px;
+  text-transform: capitalize;
+  font-size: 0.6rem;
+  text-align: start;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 12px;
 }
 
 input.edit_input {
@@ -83,6 +91,26 @@ input.edit_input:focus {
 
 input.edit_input_error {
   border: 2px solid #f005;
+}
+
+.todo_item_right_content {
+  align-items: center;
+}
+
+button.todo_item_delete_button {
+  margin-left: 15px;
+  font-size: 8px;
+  padding: 5px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  background-color: transparent;
+  box-shadow: 2px 2px 5px #0001;
+  border: 1px solid #0001;
 }
 
 .todo_item_time {

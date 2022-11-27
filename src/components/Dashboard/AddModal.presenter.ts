@@ -43,6 +43,7 @@ const useAddTodo = ({
         name: 'name',
         placeholder: 'name: gym 🏋️‍♀️',
         error: todo.name.error,
+        maxLength: 15,
         onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
           setTodo((v) => ({
             ...v,
@@ -60,7 +61,8 @@ const useAddTodo = ({
         value: todo.description.value as string,
         name: 'description',
         error: todo.description.error,
-        placeholder: 'description: gym after work 👷‍♂️ (optional)',
+        maxLength: 50,
+        placeholder: 'brief description: gym after work 👷‍♂️ (optional)',
         onChange: (e: React.ChangeEvent<HTMLInputElement>) => {
           setTodo((v) => ({
             ...v,

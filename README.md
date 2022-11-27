@@ -1,6 +1,6 @@
 # Advanced-Todo
 
-Advanced Todo with CRUD operations using Zustand
+Advanced Todo with CRUD operations using Typscrypt/Zustand/momentjs
 
 ### Features:
 - Can add new task with date, name and description

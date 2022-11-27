@@ -6,7 +6,8 @@ Advanced Todo with CRUD operations using Zustand
 - Can add new task with date, name and description
 - Able to edit the name/description on the fly
 - The date to add task is limited to today and the future.
-- change the status to done/undone
+- Change the status to done/undone
+- Form validation
 
 #### The screenshots:
 

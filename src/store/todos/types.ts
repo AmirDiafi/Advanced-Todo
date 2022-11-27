@@ -7,5 +7,6 @@ export type TodoActionsTypes = {
   addTodo: (todo: ToDoTypes) => void
   setTodoStatus: (isFinished: boolean, todoId: string) => void
   editTodoName: (value: string, todoId: string, stringName: InputEnum) => void
+  deleteItem: (itemId: string) => void
 }
 export type TodoStoreTypes = { store: ToDoTypes[] } & TodoActionsTypes

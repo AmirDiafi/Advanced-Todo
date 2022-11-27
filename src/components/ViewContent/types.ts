@@ -37,3 +37,7 @@ export interface ItemTitleProps {
   setTodo: React.Dispatch<SetStateAction<ToDoTypes>>
   setEditingNameId: React.Dispatch<SetStateAction<string | undefined>>
 }
+
+export type DeleteItemButtonTypes = {
+  item: ToDoTypes
+}

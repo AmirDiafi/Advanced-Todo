@@ -2,6 +2,15 @@
 
 Advanced Todo with CRUD operations using Typscrypt/Zustand/momentjs
 
+### Run on your local machine:
+
+```
+$ git clone https://github.com/AmirDiafi/Advanced-Todo
+```
+```
+cd Advanced-Todo && npm install && npm run dev
+```
+
 ### Features:
 - Can add new task with date, name and description
 - Able to edit the name/description on the fly
